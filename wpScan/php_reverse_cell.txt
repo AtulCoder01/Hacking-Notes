@@ -1,0 +1,9 @@
+## 
+
+# first open website
+# and go to plugins and install and activate filemanager
+# downloads php reverse shell file and open and copy code and paste here
+
+# go to wordpress :> Appearance > Editor
+# and select '404 Template' and paste code
+

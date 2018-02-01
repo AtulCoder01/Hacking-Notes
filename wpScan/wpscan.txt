@@ -1,0 +1,13 @@
+ ## use of wpscan tools....
+
+ :~$ wpscan 
+ :~$ wpscan --help or -h
+ :~$ wpsan --url www.example.com //scan wordpress website
+ :~$ wpscan -u www.example.com -e u  //scan the all users in exist website
+ :~$ wpscan -u www.example.com -e u vp  // scan vulnerable plugins
+
+# bruteforce attack on website..
+ :~$ wpscan -u www.example.com --wordlist path_of_wordlist --username user_name
+ :~$ wpscan -u www.example.com -e u --wordlist path_of_wordlist
+
+# use password open website.......................

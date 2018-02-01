@@ -1,0 +1,21 @@
+## setup proxy chains 
+
+# first install tor service and proxychains
+ :~$ apt-get install tor
+ :~$ apt-get install proxychains
+
+ :~$ service tor start  // 
+# configure in proxychains.conf file
+ :~$ locat proxychains.conf  // find file path
+ :~$ nano /etc/proxychains.conf  // open file editer
+# add '#' before 'strict_chain'
+# and remove '#' before 'dynamic_chains' // because use dynamic chains
+# add 'socks5 127.0.0.1 9050' in last line 
+
+ :~$ proxychains firefox  //open browser by proxychains
+# and scan port and website 
+ :~$ tor-resolve example.com // ip resolve anonymousaly
+ :~$ proxychains nmap -sS -v 192.168/31.123 //use nmap anonymouslay, port scan 
+ :~$ service tor restart //change ip in  proxychains 
+
+# enjoy!...............
